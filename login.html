@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EStore</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .button {
+            position: relative;
+            top: 30px;
+            left: 30px;
+            padding: 6px;
+            border: 2px solid black;
+            color: black;
+        }
+
+        .button a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            font-size: 23px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transition: all 0.9s ease-in-out;
+            color: white;
+        }
+
+        .button a:hover {
+            color: white;
+            transition: all 0.9s ease-in-out;
+        }
+
+
+        .login-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        .login-container {
+            background-color: #fff;
+            width: 90vw;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+            color: #333;
+        }
+
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn-login-submit {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .btn-login-submit:hover {
+            background-color: #0056b3;
+        }
+
+        .signup-link {
+            margin-top: 15px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="button"><a href="index.html">Home</a></div>
+    </nav>
+
+
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Login to EStore</h2>
+            <form action="dashboard.html" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+                <button type="submit" class="btn-login-submit">Login</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up here</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EStore. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+        </div>
+    </footer>
+</body>
+
+</html>

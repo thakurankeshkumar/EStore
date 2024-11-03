@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .about-container {
+            margin: 35px;
+            height: fit-content;
+            width: 100%;
+            max-width: 980px;
+            padding: 55px 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .intro,
+        .mission,
+        .team {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .intro h2 {
+            font-size: 45px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            font-size: 19px;
+            color: #555;
+        }
+
+        .mission h3,
+        .team h3 {
+            font-size: 45px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .mission p {
+            font-size: 19px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            width: 200px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .team-member h4 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #666;
+        }
+
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-left {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-center input[type="search"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 50vw;
+            max-width: 400px;
+        }
+
+        .navbar-right .btn-login,
+        .navbar-right .btn-signup {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-right .btn-login:hover,
+        .navbar-right .btn-signup:hover {
+            background-color: #0056b3;
+        }
+
+
+
+        .centerr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+        }
+
+        .centerr ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 23px;
+        }
+
+        .centerr ul li {
+            list-style: none;
+        }
+
+        .centerr ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .centerr ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+
+        .centerr ul li a {
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .centerr ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">EStore</div>
+            <div class="navbar-center">
+                <input type="search" placeholder="Search Here..." aria-label="Search">
+            </div>
+            <div class="centerr">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <button class="btn-login"><a style="text-decoration: none; color: white;"
+                        href="login.html">Login</a></button>
+                <button class="btn-signup"><a style="text-decoration: none; color: white;" href="signup.html">Sign
+                        Up</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body">
+
+
+        <div class="about-container">
+            <section class="intro">
+                <h2>About Us</h2>
+                <p>Welcome to EStore, your ultimate online shopping destination! We’re a forward-thinking e-commerce
+                    platform dedicated to providing an unparalleled shopping experience. At EStore, we aim to make
+                    quality products accessible to all by partnering with top brands and trusted sellers. Our mission is
+                    to offer a vast selection of products, ranging from cutting-edge electronics to stylish apparel and
+                    essential household items.
+
+                    We put our customers first, ensuring safe transactions, swift deliveries, and a smooth browsing
+                    experience. With an ever-expanding product catalog and unbeatable deals, EStore makes online
+                    shopping easy, enjoyable, and affordable. Our passionate team works around the clock to bring
+                    innovation, reliability, and value, making EStore the go-to choice for millions of shoppers.
+                    Discover, shop, and save as we redefine e-commerce for the modern age.</p>
+            </section>
+
+            <section class="mission">
+                <h3>Our Mission</h3>
+                <p>At EStore, our mission is to transform the online shopping experience by providing customers with
+                    unparalleled access to a wide variety of quality products at competitive prices. We are dedicated to
+                    making shopping convenient, secure, and enjoyable for everyone. By partnering with trusted brands
+                    and sellers, we ensure that our customers have access to reliable products and exclusive deals.
+
+                    We aim to continually enhance our platform, using the latest technology to deliver fast, seamless
+                    service and personalized experiences. Customer satisfaction is at the core of what we do, and we
+                    strive to build lasting relationships through transparency, innovation, and a commitment to
+                    excellence. At EStore, we are not just a marketplace—we are a community driven by a shared passion
+                    for value and quality.
+                </p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 EStore. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+        </div>
+    </footer>
+</body>
+
+</html>

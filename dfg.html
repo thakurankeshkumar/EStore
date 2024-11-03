@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EStore</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .product-card {
+            flex: 0 0 150px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            min-width: 150px;
+        }
+
+        .product-card img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product-card .product-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .product-card .price {
+            color: #555;
+            font-weight: bold;
+        }
+
+        .product-card .shop-now {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">EStore</div>
+        <div class="center">
+            <input type="search" placeholder="Search Here..">
+        </div>
+        <div class="right">
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div>
+    </nav>
+    <section class="firstSection">
+        <center>
+            <span>
+                <h1>Some Product Categories</h1>
+            </span>
+        </center>
+        <div class="nav2">
+            <div class="box1 box">
+                <img src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
+                <p>Grocery</p>
+            </div>
+            <div class="box2 box">
+                <img src="https://rukminim2.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" alt="">
+                <p>Mobiles</p>
+            </div>
+            <div class="box3 box">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100" alt="">
+                <p>Fashon</p>
+            </div>
+            <div class="box4 box">
+                <img src="https://rukminim2.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100" alt="">
+                <p>Electronics</p>
+            </div>
+            <div class="box5 box">
+                <img src="https://rukminim2.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100" alt="">
+                <p>Homes</p>
+            </div>
+            <div class="box6 box">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100" alt="">
+                <p>Appilances</p>
+            </div>
+            <div class="box7 box">
+                <img src="https://rukminim2.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100" alt="">
+                <p>Toys</p>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="banner">
+        <div class="banner-images">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/aff848959e2f20a9.jpg?q=20"
+                alt="Banner Image 1">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d9290fb51138d286.png?q=20"
+                alt="Banner Image 2">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/1e31c9d65e3b4592.jpg?q=20"
+                alt="Banner Image 3">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d9290fb51138d286.png?q=20"
+                alt="Banner Image 3">
+        </div>
+    </div>
+
+
+    <section class="next2">
+        <div class="section-title">Best of Electronics</div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="https://shorturl.at/0hUbv" alt="Shaver">
+                <div class="product-name">Best of Shavers</div>
+                <div class="price">From ₹1,649</div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="https://shorturl.at/lCpU8" alt="Mirrorless Cameras">
+                <div class="product-name">Top Mirrorless Cameras</div>
+                <a href="#" class="shop-now">Shop Now!</a>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="https://shorturl.at/sPzHV" alt="Projector">
+                <div class="product-name">Projector</div>
+                <div class="price">From ₹6990</div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="https://shorturl.at/vzVQP"
+                    alt="Projectors">
+                <div class="product-name">Projectors</div>
+                <div class="price">From ₹990099</div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <img src="https://shorturl.at/Rc0Fc" alt="Printer">
+                <div class="product-name">Printers</div>
+                <div class="price">From ₹3999</div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <img src="https://shorturl.at/Rc0Fc" alt="Monitor">
+                <div class="product-name">Monitors</div>
+                <div class="price">From ₹6599</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
